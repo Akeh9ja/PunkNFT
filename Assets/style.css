@@ -1,0 +1,191 @@
+:root {
+    --gradient: linear-gradient( 
+        45deg,
+        rgb(245, 151, 148),
+        rgb(240, 191, 76),
+        rgb(212, 237, 49),
+        rgb(158, 235, 71),
+        rgb(91, 209, 215),
+        rgb(198, 190, 238),
+        rgb(208, 148, 234),
+        rgb(235, 148, 207),
+        rgb(188, 206, 251)   
+    );
+}
+body {
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 10s infinite alternate;
+}
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    } 
+    100% {
+        background-position: right;
+    }
+}
+.NFT-head {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 50px;
+}
+.btn-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+}
+button {
+    background-color: white;
+    margin-top: 10px;
+    padding: 22px 20px;
+    border: solid white 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: var(--gradient);
+    color: white;
+    
+}
+img {
+    width: 70px;
+}
+h5 {
+    margin-bottom: -15px;
+}
+.tweet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+.drop-btn {
+    font-size: 20px;
+    position: absolute;
+    padding-left: 270px;
+    padding-bottom: 30px;
+}
+.fa-instagram {
+    font-size: 100px;
+    color: white;
+}
+.icon-ctn {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.instagram {
+    width: 40px;
+    padding: 10px;
+    
+}
+.twitch {
+    width: 40px;
+    padding: 10px;
+}
+.twitter {
+    width: 40px;
+    padding: 10px;
+}
+.instagram:hover {
+    width: 42px;
+    cursor: pointer;
+} 
+
+.twitter:hover {
+    width: 42px;
+    cursor: pointer;
+}
+.twitch:hover{
+    width: 42px;
+    cursor: pointer;
+}
+/*Wallect section*/
+.wallet-section {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.wlt-imgs {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+.wlt-ctn {
+    position: absolute;
+    border-radius: 0px;
+    width: 300px;
+    left: 0px;
+    top: 190px;
+}
+.img-ctn-wlt{
+    position: relative;
+    margin: 10px;
+}
+.wlt-ctn:hover {
+    text-decoration: underline;
+}
+@media(max-width: 1090px) {
+    .img-ctn-wlt {
+        margin-top: 70px;
+    }
+}
+/*Buy Page*/
+.buy-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.buy-img {
+    width: 300px;
+}
+p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+.div-thnk{
+    text-align: center;
+}
+.btn-home {
+    text-align: center;
+}
+.thnk{
+    font-size: 43px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.thnk-p {
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 830px) {
+    textarea {
+        width: 500px;
+    }
+}
+@media (max-width: 530px) {
+    textarea {
+        width: 250px;
+        height: 120px;
+    }
+}
